@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axiosWithAuth from '../utils/axiosWithAuth';
 
-import { Container, Card, Button, Form, Input } from 'reactstrap'
+import { Container, Card, Button, Form, Input, CardTitle } from 'reactstrap'
 
 import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/login.scss'
 
 const Login = (props) => {
 
@@ -36,8 +37,8 @@ const Login = (props) => {
 
   return (
     <Container className='login-container'> 
-      <h1>Welcome to the Bubble App!</h1>
       <Card className="login-card">
+        <CardTitle className="login-title">React Bubble App</CardTitle>
         <Form className='login-form' onSubmit={ handleLogin }>
           <Input
             type='text'

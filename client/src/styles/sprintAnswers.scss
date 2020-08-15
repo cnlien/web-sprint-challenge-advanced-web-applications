@@ -1,0 +1,22 @@
+.sprint-answers {
+    background-color: white;
+    height: 100vh;
+
+    .sprint-answers-inner {
+        margin-top: 30px;
+        text-align: left;;
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.75rem;
+            padding-bottom: 20px;
+            display: block;
+            border-bottom: 1px solid black;
+        }
+    }
+}

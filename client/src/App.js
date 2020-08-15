@@ -10,15 +10,18 @@ import BubblePage from './components/BubblePage'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import "./styles.scss";
+import './styles/global.scss'
+import SprintAnswers from "./components/SprintAnswers";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <Route exact path="/" component={Login} />
+        <Route exact path="/sprint-questions" component={SprintAnswers} />
         <PrivateRoute exact path='/bubbles-page' component={BubblePage}/>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

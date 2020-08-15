@@ -3,7 +3,10 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
 import Bubbles from "./Bubbles";
-import ColorList from "./ColorList";
+import ColorList from "./ColorList"
+import Navigation from './Navigation'
+
+import '../styles/bubblePage.scss'
 
 const BubblePage = () => {
   const [colorList, setColorList] = useState([]);
@@ -19,8 +22,11 @@ const BubblePage = () => {
 
   return (
     <>
+    <Navigation />
+    <div className="color-page">
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
+    </div>
     </>
   );
 };
